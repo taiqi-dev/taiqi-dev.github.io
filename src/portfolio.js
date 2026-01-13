@@ -34,8 +34,8 @@ const greeting = {
 
 // Social Media Links
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  github: "https://github.com/WTQ1234",
+  linkedin: "https://www.linkedin.com/in/taiqi/",
   youtube: "https://www.youtube.com/@wtq3555",
   fab: "https://www.fab.com/sellers/Taiqi",
   artstation: "https://www.artstation.com/wtq3555",
