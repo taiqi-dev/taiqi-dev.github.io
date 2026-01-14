@@ -9,6 +9,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
+  const subtitleLines = String(contactInfo.subtitle || "").split("\n");
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -30,7 +31,12 @@ export default function Contact() {
                   : "subTitle contact-subtitle"
               }
             >
-              {contactInfo.subtitle}
+              {subtitleLines.map((line, index) => (
+                <span key={index}>
+                  {line}
+                  {index < subtitleLines.length - 1 && <br />}
+                </span>
+              ))}
             </p>
             <div
               className={

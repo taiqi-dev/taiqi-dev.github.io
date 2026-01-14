@@ -1045,11 +1045,25 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all.\nI’m currently open to new job opportunities.",
   number: "+1 929-766-3555",
   email_address: "wtq3555@gmail.com"
 };
 
+const pageSettings = {
+  home: {
+    showFooter: false,
+    showContactFooter: true
+  },
+  about: {
+    showFooter: false,
+    showContactFooter: true
+  },
+  art: {
+    showFooter: false,
+    showContactFooter: true
+  }
+};
 // Twitter Section
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
@@ -1077,7 +1091,10 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
+  pageSettings,
   twitterDetails,
   isHireable,
   resumeSection
 };
+
+

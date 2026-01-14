@@ -17,21 +17,32 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
-import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
+import {pageSettings, splashScreen} from "../portfolio";
+import ContactFooter from "../components/footer/ContactFooter";
 import "./Main.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-    useState(true);
+  const settings = (pageSettings && pageSettings.home) || {};
+  const showFooter = settings.showFooter !== false;
+  const showContactFooter = settings.showContactFooter !== false;
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(() => {
+    if (!splashScreen.enabled) {
+      return false;
+    }
+    return sessionStorage.getItem("hasSeenSplash") !== "true";
+  });
 
   useEffect(() => {
     if (splashScreen.enabled) {
+      if (sessionStorage.getItem("hasSeenSplash") === "true") {
+        setIsShowingSplashAnimation(false);
+        return;
+      }
       const splashTimer = setTimeout(
-        () => setIsShowingSplashAnimation(false),
+        () => {
+          setIsShowingSplashAnimation(false);
+          sessionStorage.setItem("hasSeenSplash", "true");
+        },
         splashScreen.duration
       );
       return () => {
@@ -40,38 +51,35 @@ const Main = () => {
     }
   }, []);
 
-  const changeTheme = () => {
-    setIsDark(!isDark);
-  };
-
   return (
-    <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        {isShowingSplashAnimation && splashScreen.enabled ? (
-          <SplashScreen />
-        ) : (
-          <>
-            <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <ProjectShowcase />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
-            <ScrollToTopButton />
-          </>
-        )}
-      </StyleProvider>
-    </div>
+    <>
+      {isShowingSplashAnimation && splashScreen.enabled ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <Header />
+          {/* <Greeting /> */}
+          {/* <Skills /> */}
+          {/* <StackProgress /> */}
+          {/* <Education /> */}
+          
+          <ProjectShowcase showArt={false} />
+          <WorkExperience />
+          
+          <Projects />
+          <StartupProject />
+          <Achievement />
+          <Blogs />
+          <Talks />
+          <Twitter />
+          <Podcast />
+          {/* <Profile /> */}
+          {showFooter && <Footer />}
+          {showContactFooter && <ContactFooter />}
+          <ScrollToTopButton />
+        </>
+      )}
+    </>
   );
 };
 

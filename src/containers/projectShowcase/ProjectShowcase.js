@@ -486,31 +486,42 @@ function SingleProjectSection({ config, sectionId }) {
 }
 
 /** 默认导出：一次性渲染三块 section */
-export default function ProjectShowcase() {
+export default function ProjectShowcase({
+  showProgramming = true,
+  showDesign = true,
+  showArt = true
+}) {
+  const sections = [];
+  if (showProgramming) {
+    sections.push({
+      config: bigProjectShowcaseProgramming,
+      sectionId: "big-projects-programming"
+    });
+  }
+  if (showDesign) {
+    sections.push({
+      config: bigProjectShowcaseDesign,
+      sectionId: "big-projects-design"
+    });
+  }
+  if (showArt) {
+    sections.push({
+      config: bigProjectShowcaseArt,
+      sectionId: "big-projects-art"
+    });
+  }
+
   return (
     <>
-      {/* 程序区 */}
-      <SingleProjectSection
-        config={bigProjectShowcaseProgramming}
-        sectionId="big-projects-programming"
-      />
-      <img src="/images/divider.png" alt="divider" className="img-divider" />
-
-      {/* 策划区 */}
-      <SingleProjectSection
-        config={bigProjectShowcaseDesign}
-        sectionId="big-projects-design"
-      />
-
-      <img src="/images/divider.png" alt="divider" className="img-divider" />
-      
-      {/* 美术区 */}
-      <SingleProjectSection
-        config={bigProjectShowcaseArt}
-        sectionId="big-projects-art"
-      />
-
-      <img src="/images/divider.png" alt="divider" className="img-divider" />
+      {sections.map(section => (
+        <React.Fragment key={section.sectionId}>
+          <SingleProjectSection
+            config={section.config}
+            sectionId={section.sectionId}
+          />
+          <img src="/images/divider.png" alt="divider" className="img-divider" />
+        </React.Fragment>
+      ))}
     </>
   );
 }
