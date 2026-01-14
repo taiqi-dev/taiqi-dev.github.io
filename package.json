@@ -1,5 +1,5 @@
 {
-  "homepage": "https://WTQ1234.github.io",
+  "homepage": "https://taiqi-dev.github.io/",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build -b gh-pages --repo https://github.com/WTQ1234/WTQ1234.github.io.git -m \"deploy\"",
+    "deploy": "gh-pages -d build -b gh-pages --repo https://github.com/taiqi-dev/taiqi-dev.github.io.git -m \"deploy\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",

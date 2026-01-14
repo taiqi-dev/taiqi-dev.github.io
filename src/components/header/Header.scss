@@ -25,6 +25,7 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  border-bottom: 3px solid rgba(82, 82, 82, 0.3);
 }
 
 .header--force-hidden {
@@ -66,15 +67,15 @@
   display: block;
   flex: none;
   float: left;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-decoration: none;
-  margin-top: 10px;
+  // margin-top: 10px;
   line-height: normal;
   text-align: center;
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Micro 5", sans-serif;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;

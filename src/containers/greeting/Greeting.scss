@@ -8,9 +8,9 @@
 }
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
+  padding: 2px 10px;
   margin: 0px auto;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 .greeting-main {
@@ -18,13 +18,10 @@
   align-items: center;
 }
 
-// .subTitle {
-//   color: $subTitle !important;
-// }
-
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .empty-div {
@@ -55,11 +52,33 @@
 
 .greeting-text-p {
   font-size: 1.35rem;      // ← 改成你想要的字号
-  line-height: 1.7;     // 行距
+  line-height: 2;     // 行距
   white-space: pre-wrap;
   color: $subTitle !important;
 }
 
+.dark-mode .greeting-text {
+  color: $textColorDark !important;
+}
+
+.dark-mode .greeting-text-p {
+  color: $textColorDark !important;
+}
+.greeting-contact {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.greeting-contact-link {
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.greeting-contact-link:hover {
+  text-decoration: underline;
+}
 .greeting-text-div {
   flex: 1 1 60%;   // 大约 60% 宽，可按需要调
 }
@@ -149,3 +168,5 @@
   height: 0.15rem !important;     // 自动按原图比例
   opacity: 0.4 !important;
 }
+
+

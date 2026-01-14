@@ -58,7 +58,7 @@ const Main = () => {
       ) : (
         <>
           <Header />
-          {/* <Greeting /> */}
+          <Greeting showImage={false} />
           {/* <Skills /> */}
           {/* <StackProgress /> */}
           {/* <Education /> */}

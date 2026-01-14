@@ -22,10 +22,10 @@ const greeting = {
   username: "Taiqi Wang",
   title: "Hi all, I'm Taiqi",
   subTitle: emoji(
-    `        A passionate video game developer with 3 years of experience. 🎮
-        Specializes in gameplay features programming, performance optimization, and live-service bug fixing. ⚔️ 
-        Flexible, innovative, and logical team player who boosts productivity with plugins, tools, and clear documentation. 🎶
-        My goal: Game programmer 🤖 & Technical Designer 🛠️`
+    `    A passionate video game developer with 3 years of experience. 🎮
+    Specializes in gameplay features programming, performance optimization, and live-service bug fixing. ⚔️ 
+    Flexible, innovative, and logical team player who boosts productivity with plugins, tools, and clear documentation. 🎶
+    My goal:  Game programmer 🤖  &  Technical Designer 🛠️`
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -34,7 +34,7 @@ const greeting = {
 
 // Social Media Links
 const socialMediaLinks = {
-  github: "https://github.com/WTQ1234",
+  github: "https://github.com/taiqi-dev",
   linkedin: "https://www.linkedin.com/in/taiqi/",
   youtube: "https://www.youtube.com/@wtq3555",
   fab: "https://www.fab.com/sellers/Taiqi",
@@ -673,7 +673,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "Zuma Card By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git",
+          "Get this project source code: https://github.com/taiqi-dev/Personal_Game_Project_4_ZumaCard.git",
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/2WfUHhO6nis",
@@ -690,7 +690,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "Flying Axe By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git"
+          "Get this project source code: https://github.com/taiqi-dev/Personal_Game_Project_3_FlyingAxe.git"
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/DgpGetbsz1g",
@@ -708,7 +708,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "ElasticBall By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_ElasticBall.git"
+          "Get this project source code: https://github.com/taiqi-dev/Practice_Unity_ElasticBall.git"
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/E51xdROWx2Q",
@@ -725,7 +725,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "SheepChess By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_SheepChess.git"
+          "Get this project source code: https://github.com/taiqi-dev/Practice_Unity_SheepChess.git"
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/z5AX1iuLOAg",
@@ -742,7 +742,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "TicTacToe By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_TicTacToe.git"
+          "Get this project source code: https://github.com/taiqi-dev/Practice_Unity_TicTacToe.git"
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/zCOcAH6YAc4",
@@ -759,7 +759,7 @@ const bigProjectShowcaseProgramming = {
       details: {
         title: "2048 By Unity",
         overview: [
-          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_2048.git"
+          "Get this project source code: https://github.com/taiqi-dev/Practice_Unity_2048.git"
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/SAitsRjwNuw",
@@ -1045,7 +1045,8 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.\nI’m currently open to new job opportunities.",
+    // "Discuss a project or just want to say hi? My Inbox is open for all.\nI’m currently open to new job opportunities.",
+    "I’m currently open to new job opportunities.",
   number: "+1 929-766-3555",
   email_address: "wtq3555@gmail.com"
 };

@@ -6,10 +6,10 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {contactInfo, illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function Greeting() {
+export default function Greeting({showImage = true}) {
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
@@ -36,11 +36,30 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
-              <div id="resume" className="empty-div"></div>
+              {/* <div id="resume" className="empty-div"></div> */}
+              
+              <div className={isDark ? "dark-mode greeting-contact" : "greeting-contact"}>
+                {contactInfo.number && (
+                  <a className="greeting-contact-link" href={"tel:" + contactInfo.number}>
+                    Phone: {contactInfo.number}
+                  </a>
+                )}
+                {contactInfo.email_address && (
+                  <a
+                    className="greeting-contact-link"
+                    href={"mailto:" + contactInfo.email_address}
+                  >
+                    Email: {contactInfo.email_address}
+                  </a>
+                )}
+              </div>
+              <div className="spacer" />
+              <br />
               <SocialMedia />
+
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
+                {/* <Button text="Contact me" href="#contact" /> */}
+                {false && greeting.resumeLink && (
                   <div className="resume-download-group">
                     <a
                       href={require("./Taiqi_Resume_OnePage.pdf")}
@@ -65,16 +84,18 @@ export default function Greeting() {
 
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
+          {showImage && (
+            <div className="greeting-image-div">
+              {illustration.animated ? (
+                <DisplayLottie animationData={landingPerson} />
+              ) : (
+                <img
+                  alt="man sitting on table"
+                  src={require("../../assets/images/manOnTable.svg")}
+                ></img>
+              )}
+            </div>
+          )}
         </div>
       </div>
       <img src="/images/divider.png" alt="divider" className="img-divider" />

@@ -55,9 +55,9 @@ function Header({showSectionLinks = true, showProjectsLink = true}) {
         }
       >
         <Link to="/" className="logo" onClick={handleNavClick}>
-          <span className="grey-color"> &lt;</span>
+          {/* <span className="grey-color"> &lt;</span> */}
           <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          {/* <span className="grey-color">/&gt;</span> */}
           {/* <span className="logo-email">wtq3555@gmail.com</span> */}
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
