@@ -22,10 +22,10 @@ const greeting = {
   username: "Taiqi Wang",
   title: "Hi all, I'm Taiqi",
   subTitle: emoji(
-    `    A passionate video game developer with 3 years of experience. 🎮
-    Specializes in gameplay features programming, performance optimization, and live-service bug fixing. ⚔️ 
-    Flexible, innovative, and logical team player who boosts productivity with plugins, tools, and clear documentation. 🎶
-    My goal:  Game programmer 🤖  &  Technical Designer 🛠️`
+    `    Versatile, analytical, and collaborative game programmer with 3 years of experience. 🎮
+    Specializes in multiplayer gameplay logic, build/release pipelines, performance optimization. ⚔️ 
+    Accelerates iteration with plugins, debug tools, validation tools, and clear documentation. 🎶`
+    // My goal:  Game programmer 🤖  &  Technical Designer 🛠️
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -37,8 +37,10 @@ const socialMediaLinks = {
   github: "https://github.com/taiqi-dev",
   linkedin: "https://www.linkedin.com/in/taiqi/",
   youtube: "https://www.youtube.com/@wtq3555",
-  fab: "https://www.fab.com/sellers/Taiqi",
-  artstation: "https://www.artstation.com/wtq3555",
+  fab: "",
+  artstation: "",
+  // fab: "https://www.fab.com/sellers/Taiqi",
+  // artstation: "https://www.artstation.com/wtq3555",
   gmail: "wtq3555@gmail.com",
   gitlab: "",
   facebook: "",
@@ -309,7 +311,7 @@ const workExperiences = {
     },
     {
       role: "Mobile Game Development Engineer",
-      company: "Fancy Guo Games",
+      company: "Fancy Guo Games Inc.",
       companylogo: require("./assets/images/QingGuoLogo.png"),
       date: "Jun 2020 - Apr 2022",
       desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
@@ -317,6 +319,7 @@ const workExperiences = {
         "Implemented client- and server-side gameplay systems.",
         "Added data tracking and GM tools, and optimized performance."
       ],
+      coverImage: "/images/WorkExp1.png",
       // ------- 详情配置 -------
       details: {
         projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
@@ -367,6 +370,91 @@ const workExperiences = {
           "/images/WorkExp_Intern02.png",
         ]
       }
+    },
+  ]
+};
+
+// Core projects section (Home page)
+const coreProjects = {
+  display: true, // Set it to true to show Core Projects section
+  title: "Core Projects",
+  subtitle: "",
+  experience: [
+    {
+      role: "Mobile Game Development Engineer",
+      company: "Fancy Guo Games Inc.",
+      companylogo: require("./assets/images/QingGuoLogo.png"),
+      date: "Jun 2020 - Apr 2022",
+      desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
+      descBullets: [
+        "Built multiplayer gameplay systems.",
+        "Built data tracking and GM tools, fixed live issues, optimized performance."
+      ],
+      coverImage: "/images/WorkExp1_CoverImage.png",
+      // ------- 详情配置 -------
+      details: {
+        projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
+        overview: [
+          // `Built and maintained the game logic, GM tools and device compatibility`
+        ],
+        responsibilities: [
+          "Built multiplayer gameplay systems: onboarding, achievements, dungeons, quests, friend, guilds, team play, AI, skills, buffs, etc.",
+          "Built GM tools/commands, game test tools, data tracking, adapted the game for different device models, fixed live issues, and optimized performance.",
+          "Collaborated with Engine team to define feature requirements, write and execute test cases, and debug engine-related issues.",
+        ],
+        technologies: "Lua, SVN, iOS/Android build & release",
+        youtubeUrl: "https://youtu.be/AXPAR3cICJg", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        title_01: "Game Play",
+        detail_01: [],
+        images_01: [
+          "/images/WorkExp1_GamePlay_01.png",
+          "/images/WorkExp1_GamePlay_02.png",
+          "/images/WorkExp1_GamePlay_03.png",
+          "/images/WorkExp1_GamePlay_04.png",
+        ],
+        title_02: "GM Tools, Test Tools",
+        detail_02: [
+          "Built GM Tools to speed up team's testing and config flow.",
+          "Built a Hierarchy/Inspector window for debugging, easily view details in the game."
+        ],
+        images_02: [
+          "/images/WorkExp1_Tool_01.png",
+          "/images/WorkExp1_Tool_02.png",
+          "/images/WorkExp1_Tool_03.png",
+          "/images/WorkExp1_Tool_04.png",
+        ],
+        title_03: "Clear Document and Excel degin",
+        detail_03: [
+          "Created and structured Excel-based config sheets for designers, package them into Lua data tables.",
+          "Wrote configuration docs that defined keywords and parameter types, with copy-paste templates and usage notes.",
+          "Most of these documents were in Chinese, I translated and uploaded a few to Google Sheets as examples—see the link below.",
+          "UI Navigation Configuration documentation: https://docs.google.com/spreadsheets/d/19WGvVbgTZdmhcwaxEVKYlzThitrJiNVvURVlxah-vKI/",
+          "Onboarding System Configuration documentation: https://docs.google.com/spreadsheets/d/1Fai5fxISLDGniBqXBalkbdYoWsHFBjsG3nKEBEfR6Ik/",
+        ],
+        images_03: [
+          "/images/WorkExp1_Doc_01.png",
+          "/images/WorkExp1_Doc_02.png",
+          "/images/WorkExp1_Doc_03.png",
+          "/images/WorkExp1_Doc_04.png",
+          "/images/WorkExp1_Doc_05.png",
+          "/images/WorkExp1_Doc_06.png",
+        ],
+        title_04: "Example: Onboarding System",
+        detail_04: [
+          "A data-driven, designer-configurable pipeline for the configuration.",
+          "Clear documentation with copy-paste templates, self-check tools.",
+          "Dual persistence for tutorial state (local + server-side) and a recovery flow: on relaunch / login, the game restores the correct tutorial step.",
+          "Measured Impact: 1. ~10–15% improvement in first-time completion for guided feature flows. ",
+          "Measured Impact: 2. Reduced designer setup time per guide, from ~20–30 minutes to ~5–10 minutes. ",
+          "Measured Impact: 3. ~4% of players used the guide recovery flow at least once after interruptions (weak network/loading/crash). ",
+        ],
+        images_04: [
+          "/images/WorkExp1_Guide_01.png",
+          "/images/WorkExp1_Guide_02.png",
+          "/images/WorkExp1_Guide_03.png",
+          "/images/WorkExp1_Guide_04.png",
+        ],
+      },
     },
   ]
 };
@@ -1082,6 +1170,7 @@ export {
   educationInfo,
   techStack,
   workExperiences,
+  coreProjects,
   openSource,
   bigProjects,
   bigProjectShowcaseDesign,
@@ -1097,5 +1186,4 @@ export {
   isHireable,
   resumeSection
 };
-
 

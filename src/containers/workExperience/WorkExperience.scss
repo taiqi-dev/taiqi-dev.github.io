@@ -228,6 +228,12 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
+/* Center single media grid only inside CoreProjects */
+#core-projects .exp-expanded-media-grid--single {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 单个媒体格子：不再可点击，只保留 hover 效果 */
 .exp-expanded-media-item {
   border-radius: 10px;
@@ -270,13 +276,26 @@
 
 /* 图片格子：只有 hover 缩放，没有点击 */
 .exp-expanded-media-item--image img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
   object-fit: contain;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   cursor: zoom-in;
 }
+
+/* captions for CoreProjects grouped images only */
+#core-projects .exp-expanded-media-item--image-with-caption {
+  flex-direction: column;
+}
+
+#core-projects .exp-expanded-image-caption {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
 
 /* 外链按钮（Open this video on YouTube） */
 .exp-expanded-video-link {
@@ -330,13 +349,108 @@
 }
 
 .exp-lightbox__image {
-  max-width: 60vw;
-  max-height: 60vh;
+  max-width: 75vw;
+  // max-height: 75vh;
+  min-width: 75vw;
+  // min-height: 75vh;
   width: auto;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   cursor: zoom-out;
+}
+
+/* lightbox navigation only for CoreProjects */
+#core-projects .exp-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: #111111;
+  color: #ffffff;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+#core-projects .exp-lightbox__nav:hover {
+  background: #000000;
+  transform: translateY(-50%) scale(1.05);
+}
+
+#core-projects .exp-lightbox__nav--left {
+  left: -36px;
+}
+
+#core-projects .exp-lightbox__nav--right {
+  right: -36px;
+}
+
+#core-projects .exp-lightbox__content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  user-select: none;
+}
+
+#core-projects .exp-expanded-image-caption {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: zoom-in;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+#core-projects .experience-card-dark .exp-expanded-image-caption {
+  color: #d7d7d7;
+}
+
+/* CoreProjects modal sizing + typography (scoped only) */
+#core-projects .experience-card.exp-expanded-card {
+  width: 80vw;
+  max-width: 80vw;
+}
+
+#core-projects .experience-text-role {
+  font-size: 1.3rem;
+}
+
+#core-projects .experience-text-date {
+  font-size: 1rem;
+}
+
+#core-projects .experience-text-desc {
+  font-size: 1rem;
+}
+
+#core-projects .exp-expanded-paragraph {
+  font-size: 1rem;
+}
+
+#core-projects .experience-text-details li {
+  font-size: 0.98rem;
+}
+
+#core-projects .exp-expanded-section h4 {
+  font-size: 1.05rem;
+}
+
+#core-projects .exp-expanded-technologies {
+  font-size: 0.95rem;
 }
 
 
@@ -352,3 +466,4 @@
 .dark-mode .exp-expanded-section li {
   color: $textColorDark !important;
 }
+

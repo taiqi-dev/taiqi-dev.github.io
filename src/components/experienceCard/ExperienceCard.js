@@ -105,6 +105,15 @@ export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+        {cardInfo.coverImage && (
+          <div className="experience-card-cover">
+            <img
+              src={cardInfo.coverImage}
+              alt={`${cardInfo.company} cover`}
+              loading="lazy"
+            />
+          </div>
+        )}
       </div>
 
       {/* 底部按钮 */}
