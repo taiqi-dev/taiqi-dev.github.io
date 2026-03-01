@@ -23,6 +23,53 @@ function getYoutubeEmbedUrl(youtubeUrl) {
   }
 }
 
+function normalizeArray(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.filter(Boolean);
+  return [value];
+}
+
+function getMediaGroups(details, maxGroups = 5) {
+  if (!details) return [];
+
+  if (Array.isArray(details.imageGroups)) {
+    return details.imageGroups
+      .map(group => ({
+        title: group?.title || "",
+        details: normalizeArray(group?.details),
+        images: normalizeArray(group?.images)
+      }))
+      .filter(
+        group =>
+          group.title ||
+          (group.details && group.details.length > 0) ||
+          (group.images && group.images.length > 0)
+      );
+  }
+
+  const groups = [];
+  for (let i = 1; i <= maxGroups; i += 1) {
+    const suffix = String(i).padStart(2, "0");
+    const title = details[`title_${suffix}`];
+    const detail = details[`detail_${suffix}`];
+    const images = details[`images_${suffix}`];
+    const normalizedDetails = normalizeArray(detail);
+    const normalizedImages = normalizeArray(images);
+    if (
+      title ||
+      (normalizedDetails && normalizedDetails.length > 0) ||
+      (normalizedImages && normalizedImages.length > 0)
+    ) {
+      groups.push({
+        title: title || "",
+        details: normalizedDetails,
+        images: normalizedImages
+      });
+    }
+  }
+  return groups;
+}
+
 export default function WorkExperience() {
   
   const { isDark } = useContext(StyleContext);
@@ -91,6 +138,9 @@ export default function WorkExperience() {
     currentDetails && Array.isArray(currentDetails.images)
       ? currentDetails.images.filter(Boolean)
       : [];
+  const hasRawImages = rawImages.length > 0;
+  const mediaGroups = getMediaGroups(currentDetails);
+  const useGroupedMedia = !hasRawImages && mediaGroups.length > 0;
 
   // YouTube embed 链接
   const youtubeEmbedUrl =
@@ -100,14 +150,25 @@ export default function WorkExperience() {
 
   // 统一媒体 items：如果有视频就放在第一个，后面是图片
   const mediaItems = [];
-  if (youtubeEmbedUrl) {
+  if (youtubeEmbedUrl && !useGroupedMedia) {
     mediaItems.push({ type: "video", key: "video" });
   }
-  rawImages.forEach((src, idx) => {
-    mediaItems.push({ type: "image", src, key: `img-${idx}` });
-  });
+  if (!useGroupedMedia) {
+    rawImages.forEach((src, idx) => {
+      mediaItems.push({ type: "image", src, key: `img-${idx}` });
+    });
+  }
 
-  const hasMedia = mediaItems.length > 0;
+  const hasMedia =
+    mediaItems.length > 0 ||
+    (useGroupedMedia &&
+      mediaGroups.some(
+        group =>
+          group.title ||
+          (group.details && group.details.length > 0) ||
+          (group.images && group.images.length > 0)
+      )) ||
+    (useGroupedMedia && Boolean(youtubeEmbedUrl));
 
   return (
     <div id="experience">
@@ -263,30 +324,131 @@ export default function WorkExperience() {
                 </section>
               )}
 
-              {/* 媒体区：YouTube + 图片统一 Grid（视频在第一个） */}
+              {/* media: prefer details.images; fallback to title_01/detail_01/images_01 groups */}
               {hasMedia && (
                 <section className="exp-expanded-media-section">
-                  <div
-                    className={
-                      "exp-expanded-media-grid " +
-                      (mediaItems.length === 1
-                        ? "exp-expanded-media-grid--single"
-                        : "")
-                    }
-                  >
-                                        {mediaItems.map((item, index) => {
-                      if (item.type === "video") {
+                  {!useGroupedMedia && (
+                    <div
+                      className={
+                        "exp-expanded-media-grid " +
+                        (mediaItems.length === 1
+                          ? "exp-expanded-media-grid--single"
+                          : "")
+                      }
+                    >
+                      {mediaItems.map((item, index) => {
+                        if (item.type === "video") {
+                          return (
+                            <div
+                              key={item.key}
+                              className="exp-expanded-media-item exp-expanded-media-item--video"
+                            >
+                              <div className="exp-expanded-video-wrapper">
+                                <iframe
+                                  src={youtubeEmbedUrl}
+                                  title={
+                                    currentDetails?.projectName ||
+                                    expanded.card.company
+                                  }
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                  loading="lazy"
+                                />
+                              </div>
+                              {currentDetails?.youtubeUrl && (
+                                <div className="exp-expanded-video-link">
+                                  <a
+                                    href={currentDetails.youtubeUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    Open this video on YouTube
+                                  </a>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        }
+
                         return (
                           <div
                             key={item.key}
-                            className="exp-expanded-media-item exp-expanded-media-item--video"
+                            className="exp-expanded-media-item exp-expanded-media-item--image"
                           >
+                            <img
+                              src={item.src}
+                              alt={
+                                currentDetails?.projectName ||
+                                `${expanded.card.company} screenshot ${index}`
+                              }
+                              loading="lazy"
+                              onClick={() => setLightboxImage(item.src)}
+                            />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {useGroupedMedia && (
+                    <>
+                      {mediaGroups.map((group, groupIndex) => (
+                        <div
+                          key={`media-group-${groupIndex}`}
+                          className="exp-expanded-section"
+                        >
+                          {group.title && <h4>{group.title}</h4>}
+                          {group.details && group.details.length > 0 && (
+                            <ul>
+                              {group.details.map((item, idx) => (
+                                <li
+                                  key={`mg-${groupIndex}-${idx}`}
+                                  className={isDark ? "dark-mode-text" : ""}
+                                >
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                          {group.images && group.images.length > 0 && (
+                            <div
+                              className={
+                                "exp-expanded-media-grid " +
+                                (group.images.length === 1
+                                  ? "exp-expanded-media-grid--single"
+                                  : "")
+                              }
+                            >
+                              {group.images.map((src, idx) => (
+                                <div
+                                  key={`mg-img-${groupIndex}-${idx}`}
+                                  className="exp-expanded-media-item exp-expanded-media-item--image"
+                                >
+                                  <img
+                                    src={src}
+                                    alt={
+                                      currentDetails?.projectName ||
+                                      `${expanded.card.company} screenshot ${idx}`
+                                    }
+                                    loading="lazy"
+                                    onClick={() => setLightboxImage(src)}
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+
+                      {youtubeEmbedUrl && (
+                        <div className="exp-expanded-media-grid exp-expanded-media-grid--single">
+                          <div className="exp-expanded-media-item exp-expanded-media-item--video">
                             <div className="exp-expanded-video-wrapper">
                               <iframe
                                 src={youtubeEmbedUrl}
                                 title={
-                                  currentDetails?.projectName ||
-                                  expanded.card.company
+                                  currentDetails?.projectName || expanded.card.company
                                 }
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -301,32 +463,15 @@ export default function WorkExperience() {
                                   target="_blank"
                                   rel="noreferrer"
                                 >
-                                  ? Open this video on YouTube
+                                  Open this video on YouTube
                                 </a>
                               </div>
                             )}
                           </div>
-                        );
-                      }
-
-                      return (
-                        <div
-                          key={item.key}
-                          className="exp-expanded-media-item exp-expanded-media-item--image"
-                        >
-                          <img
-                            src={item.src}
-                            alt={
-                              currentDetails?.projectName ||
-                              `${expanded.card.company} screenshot ${index}`
-                            }
-                            loading="lazy"
-                            onClick={() => setLightboxImage(item.src)}
-                          />
                         </div>
-                      );
-                    })}
-                  </div>
+                      )}
+                    </>
+                  )}
                 </section>
               )}
             </div>
@@ -356,6 +501,4 @@ export default function WorkExperience() {
     </div>
   );
 }
-
-
 

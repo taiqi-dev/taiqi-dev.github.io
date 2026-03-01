@@ -316,30 +316,73 @@ const workExperiences = {
       date: "Jun 2020 - Apr 2022",
       desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
       descBullets: [
-        "Implemented client- and server-side gameplay systems.",
-        "Added data tracking and GM tools, and optimized performance."
+        "Built multiplayer gameplay systems.",
+        "Built data tracking and GM tools, fixed live issues, optimized performance."
       ],
-      coverImage: "/images/WorkExp1.png",
+      coverImage: "/images/WorkExp1_CoverImage.png",
       // ------- 详情配置 -------
       details: {
         projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
         overview: [
-          `Built and maintained the game logic, GM tools and device compatibility`
+          // `Built and maintained the game logic, GM tools and device compatibility`
         ],
         responsibilities: [
-          "Implemented client- and server-side gameplay systems including abilities, dungeons, quests, guilds, team play, AI, skills, buffs, and player guide.",
-          "Implemented data tracking, adapted the game for different device models, added GM tools/commands, fixed live issues, and optimized performance.",
-          "Worked closely with the engine team to define feature requirements, write and execute test cases, and debug engine-related issues.",
+          "Built multiplayer gameplay systems: onboarding, achievements, dungeons, quests, friend, guilds, team play, AI, skills, buffs, etc.",
+          "Built GM tools/commands, game test tools, data tracking, adapted the game for different device models, fixed live issues, and optimized performance.",
+          "Collaborated with Engine team to define feature requirements, write and execute test cases, and debug engine-related issues.",
         ],
         technologies: "Lua, SVN, iOS/Android build & release",
         youtubeUrl: "https://youtu.be/AXPAR3cICJg", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
-        images: [
-          // 可选：放几张截图路径（public 下）
-          "/images/WorkExp1.png",
-          "/images/WorkExp1_3.png",
-          "/images/WorkExp1_2.png",
-          "/images/WorkExp1_1.png",
-        ]
+        title_01: "Game Play",
+        detail_01: [],
+        images_01: [
+          "/images/WorkExp1_GamePlay_01.png",
+          "/images/WorkExp1_GamePlay_02.png",
+          "/images/WorkExp1_GamePlay_03.png",
+          "/images/WorkExp1_GamePlay_04.png",
+        ],
+        title_02: "GM Tools, Test Tools",
+        detail_02: [
+          "Built GM Tools to speed up team's testing and config flow.",
+          "Built a Hierarchy / Inspector window for debugging, easily view details in the game."
+        ],
+        images_02: [
+          "/images/WorkExp1_Tool_01.png",
+          "/images/WorkExp1_Tool_02.png",
+          "/images/WorkExp1_Tool_03.png",
+          "/images/WorkExp1_Tool_04.png",
+        ],
+        title_03: "Clear Document and Excel degin",
+        detail_03: [
+          "Created and structured Excel-based config sheets for designers, package them into Lua data tables.",
+          "Wrote configuration docs that defined keywords and parameter types, with copy-paste templates and usage notes.",
+          "Most of these documents were in Chinese, I translated and uploaded a few to Google Sheets as examples—see the link below.",
+          "UI Navigation Configuration documentation: https://docs.google.com/spreadsheets/d/19WGvVbgTZdmhcwaxEVKYlzThitrJiNVvURVlxah-vKI/",
+          "Onboarding System Configuration documentation: https://docs.google.com/spreadsheets/d/1Fai5fxISLDGniBqXBalkbdYoWsHFBjsG3nKEBEfR6Ik/",
+        ],
+        images_03: [
+          "/images/WorkExp1_Doc_01.png",
+          "/images/WorkExp1_Doc_02.png",
+          "/images/WorkExp1_Doc_03.png",
+          "/images/WorkExp1_Doc_04.png",
+          "/images/WorkExp1_Doc_05.png",
+          "/images/WorkExp1_Doc_06.png",
+        ],
+        title_04: "Example: Onboarding System",
+        detail_04: [
+          "A data-driven, designer-configurable pipeline for the configuration.",
+          "Clear documentation with copy-paste templates, self-check tools.",
+          "Dual persistence for tutorial state (local + server-side) and a recovery flow: on relaunch / login, the game restores the correct tutorial step.",
+          "Measured Impact: 1. ~10–15% improvement in first-time completion for guided feature flows. ",
+          "Measured Impact: 2. Reduced designer setup time per guide, from ~20–30 minutes to ~5–10 minutes. ",
+          "Measured Impact: 3. ~4% of players used the guide recovery flow at least once after interruptions (weak network/loading/crash). ",
+        ],
+        images_04: [
+          "/images/WorkExp1_Guide_01.png",
+          "/images/WorkExp1_Guide_02.png",
+          "/images/WorkExp1_Guide_03.png",
+          "/images/WorkExp1_Guide_04.png",
+        ],
       }
     },
     {
@@ -394,9 +437,7 @@ const coreProjects = {
       // ------- 详情配置 -------
       details: {
         projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
-        overview: [
-          // `Built and maintained the game logic, GM tools and device compatibility`
-        ],
+        overview: [],
         responsibilities: [
           "Built multiplayer gameplay systems: onboarding, achievements, dungeons, quests, friend, guilds, team play, AI, skills, buffs, etc.",
           "Built GM tools/commands, game test tools, data tracking, adapted the game for different device models, fixed live issues, and optimized performance.",
@@ -404,7 +445,7 @@ const coreProjects = {
         ],
         technologies: "Lua, SVN, iOS/Android build & release",
         youtubeUrl: "https://youtu.be/AXPAR3cICJg", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
-        title_01: "Game Play",
+        title_01: "1. Game Play",
         detail_01: [],
         images_01: [
           "/images/WorkExp1_GamePlay_01.png",
@@ -412,10 +453,10 @@ const coreProjects = {
           "/images/WorkExp1_GamePlay_03.png",
           "/images/WorkExp1_GamePlay_04.png",
         ],
-        title_02: "GM Tools, Test Tools",
+        title_02: "2. GM Tools, Test Tools",
         detail_02: [
           "Built GM Tools to speed up team's testing and config flow.",
-          "Built a Hierarchy/Inspector window for debugging, easily view details in the game."
+          "Built a Hierarchy / Inspector window for debugging, easily view details in the game."
         ],
         images_02: [
           "/images/WorkExp1_Tool_01.png",
@@ -423,7 +464,7 @@ const coreProjects = {
           "/images/WorkExp1_Tool_03.png",
           "/images/WorkExp1_Tool_04.png",
         ],
-        title_03: "Clear Document and Excel degin",
+        title_03: "3. Clear Document and Excel degin",
         detail_03: [
           "Created and structured Excel-based config sheets for designers, package them into Lua data tables.",
           "Wrote configuration docs that defined keywords and parameter types, with copy-paste templates and usage notes.",
@@ -439,7 +480,7 @@ const coreProjects = {
           "/images/WorkExp1_Doc_05.png",
           "/images/WorkExp1_Doc_06.png",
         ],
-        title_04: "Example: Onboarding System",
+        title_04: "4. Example: Onboarding System",
         detail_04: [
           "A data-driven, designer-configurable pipeline for the configuration.",
           "Clear documentation with copy-paste templates, self-check tools.",
@@ -456,6 +497,71 @@ const coreProjects = {
         ],
       },
     },
+    {
+      role: "Inventory System Framework - Unity",
+      company: "Personal Project",
+      companylogo: require("./assets/images/BagSystemLogo.png"),
+      date: "Jan 2026",
+      desc: `Inventory + Item + Equipment system`,
+      descBullets: [
+        "Built a data-driven inventory system.",
+        "Built authoritative server logic, client request bridge, editor tools.",
+        // "Open-source and free — published on GitHub / Unity Asset Store / Itch.io"
+      ],
+      coverImage: "/images/CoreProject2_CoverImage.png",
+      details: {
+        projectName: `Inventory system - Part of my CommonGamePlayKit`,
+        overview: [],
+        responsibilities: [
+          "Built a data-driven inventory system.",
+          "Built authoritative server logic, client request bridge, editor tools.",
+          "Built simple Equipment / Shop / Attribute system for inventory demo.",
+          <>
+            View the Code:{" "}
+            <a href="https://github.com/taiqi-dev/CommonGamePlayKit.git" target="_blank" rel="noreferrer" >
+               https://github.com/taiqi-dev/CommonGamePlayKit.git
+            </a>
+          </>,
+          // "Open-source and free — published on GitHub / Unity Asset Store / Itch.io"
+        ],
+        technologies: "Unity, C#, Vibe Coding",
+        youtubeUrl: "https://youtu.be/_vnPKff5o6I",
+        title_01: "1. Split Server / Client logic, clear namespaces, Reusable Core Logic",
+        detail_01: [
+          "Split Runtime assemblies into Common / Server / Client namespace, with dependency boundaries.",
+          "Event-driven model enables UI decoupling, swappable UI prefabs, reuse across modules: Shop / Crafting / Equipment.",
+          // 画一个思维导图 + API文档, 替代上面的两个文本展示
+        ],
+        images_01: [
+          "/images/CoreProject2_API_02.png", 
+          "/images/CoreProject2_API_03.png", 
+          "/images/CoreProject2_API_01.png", 
+          "/images/CoreProject2_API_04.png", 
+        ], 
+        title_02: "2. Designer-friendly editor tooling, data-driven content pipeline",
+        detail_02: [
+          "Editor windows cover Authoring, Validation, GUID management, and Batch Export",
+          "Validation rules (duplicate/missing GUIDs, empty shapes, invalid tags, etc.).", 
+          "ShapeGrid editing: generate toggle grids, auto-center placement, visualize origin/pivot for precise layouts.",
+          // "Exports generate deterministic outputs (index file + stable naming + versioned JSON payloads), enabling fast iteration, hot updates, and rollback-safe releases.",
+        ],
+        images_02: [
+          "/images/CoreProject2_Tool_01.png", 
+          "/images/CoreProject2_Tool_02.png",
+          "/images/CoreProject2_Tool_03.png",
+          "/images/CoreProject2_Tool_04.png"
+        ],
+        title_03: "3. Robust failure modes (graceful degradation + Clear ResultCode / UI Message)",
+        detail_03: [
+          "Logging is centralized via LogSettings.",
+          "Key operations return a ResultCode and UI Messages.",
+        ],
+        images_03: [
+          "/images/CoreProject2_Message_01.png", 
+          "/images/CoreProject2_Message_02.png"
+        ],
+      },
+    }
   ]
 };
 

@@ -234,6 +234,12 @@
   margin-right: auto;
 }
 
+/* Center single media grid inside WorkExperience as well */
+#experience .exp-expanded-media-grid--single {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 单个媒体格子：不再可点击，只保留 hover 效果 */
 .exp-expanded-media-item {
   border-radius: 10px;
@@ -466,4 +472,3 @@
 .dark-mode .exp-expanded-section li {
   color: $textColorDark !important;
 }
-
