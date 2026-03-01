@@ -525,7 +525,7 @@ const coreProjects = {
           // "Open-source and free — published on GitHub / Unity Asset Store / Itch.io"
         ],
         technologies: "Unity, C#, Vibe Coding",
-        youtubeUrl: "https://youtu.be/_vnPKff5o6I",
+        youtubeUrl: "https://youtu.be/vi2iGXq2PaQ",
         title_01: "1. Split Server / Client logic, clear namespaces, Reusable Core Logic",
         detail_01: [
           "Split Runtime assemblies into Common / Server / Client namespace, with dependency boundaries.",
