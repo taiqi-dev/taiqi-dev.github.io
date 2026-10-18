@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-18T21:48:08+00:00",
   "pullRequests": 124,
-  "images": 133,
+  "images": 134,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -27,6 +27,7 @@
     "media/pr-114/01-original-complete-base.png",
     "media/pr-114/02-daylight-bridge-over-water.png",
     "media/pr-114/03-arch-water-and-bank-roots.png",
+    "media/pr-124/01-online-branches.jpg",
     "media/pr-2/copy-group.png",
     "media/pr-2/final-hud.png",
     "media/pr-24/01-flat-bridge.png",
