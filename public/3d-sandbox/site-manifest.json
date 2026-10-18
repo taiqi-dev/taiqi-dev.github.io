@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-18T22:17:24+00:00",
+  "generatedAt": "2026-10-18T22:20:24+00:00",
   "pullRequests": 128,
-  "images": 137,
+  "images": 138,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -31,6 +31,7 @@
     "media/pr-125/01-original-library.png",
     "media/pr-125/02-original-desk-and-chair.png",
     "media/pr-125/03-original-rug-and-floor.png",
+    "media/pr-127/02-plan-overview.jpg",
     "media/pr-2/copy-group.png",
     "media/pr-2/final-hud.png",
     "media/pr-24/01-flat-bridge.png",
