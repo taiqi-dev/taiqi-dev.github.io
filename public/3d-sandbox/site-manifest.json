@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T05:18:10+00:00",
-  "pullRequests": 181,
-  "images": 208,
+  "generatedAt": "2026-10-19T05:28:24+00:00",
+  "pullRequests": 182,
+  "images": 210,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -102,6 +102,8 @@
     "media/pr-181/01-inherited.png",
     "media/pr-181/02-painted-layers.png",
     "media/pr-181/03-water-priority-copy.png",
+    "media/pr-182/04-walking-framed.png",
+    "media/pr-182/05-arrival-framed.png",
     "media/pr-2/copy-group.png",
     "media/pr-2/final-hud.png",
     "media/pr-24/01-flat-bridge.png",
