@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T00:11:31+00:00",
+  "generatedAt": "2026-10-19T00:16:55+00:00",
   "pullRequests": 140,
-  "images": 155,
+  "images": 158,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -49,6 +49,9 @@
     "media/pr-138/02-east-high-rise.png",
     "media/pr-138/03-resized-controls.png",
     "media/pr-139/01-near-chair.png",
+    "media/pr-140/01-original-endpoints.png",
+    "media/pr-140/02-ramp-preview.png",
+    "media/pr-140/03-confirmed.png",
     "media/pr-2/copy-group.png",
     "media/pr-2/final-hud.png",
     "media/pr-24/01-flat-bridge.png",
