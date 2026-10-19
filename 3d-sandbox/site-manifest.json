@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-10-19T10:24:59+00:00",
-  "stateObservedAt": "2026-10-19T10:24:58.414775+00:00",
+  "stateObservedAt": "2026-10-19T10:30:33.419233+00:00",
   "pullRequests": 208,
-  "images": 272,
+  "images": 273,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -166,6 +166,7 @@
     "media/pr-206/01-overflow.png",
     "media/pr-206/02-overflow.png",
     "media/pr-206/03-overflow.png",
+    "media/pr-207/01-updated-online.jpg",
     "media/pr-208/baseline.png",
     "media/pr-208/repaired-detail.png",
     "media/pr-208/repaired-room.png",
