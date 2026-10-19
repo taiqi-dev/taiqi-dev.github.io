@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-19T09:52:03+00:00",
-  "stateObservedAt": "2026-10-19T09:52:49.504854+00:00",
-  "pullRequests": 205,
-  "images": 266,
+  "generatedAt": "2026-10-19T10:03:53+00:00",
+  "stateObservedAt": "2026-10-19T10:03:53.207134+00:00",
+  "pullRequests": 207,
+  "images": 269,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -163,6 +163,9 @@
     "media/pr-204/05-shared.png",
     "media/pr-205/01-room.png",
     "media/pr-205/02-rug-selected.png",
+    "media/pr-206/01-overflow.png",
+    "media/pr-206/02-overflow.png",
+    "media/pr-206/03-overflow.png",
     "media/pr-24/01-flat-bridge.png",
     "media/pr-24/02-arched-bridge.png",
     "media/pr-24/03-arch-detail-hud.png",
