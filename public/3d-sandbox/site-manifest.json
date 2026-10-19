@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T04:48:17+00:00",
-  "pullRequests": 177,
-  "images": 198,
+  "generatedAt": "2026-10-19T05:05:35+00:00",
+  "pullRequests": 179,
+  "images": 204,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -92,6 +92,12 @@
     "media/pr-176/02-base-changed.png",
     "media/pr-176/04-floor-repaired.png",
     "media/pr-177/01-accepted.png",
+    "media/pr-178/01-registered-tree.png",
+    "media/pr-178/02-felled-stump.png",
+    "media/pr-178/03-pickup-quest-completed.png",
+    "media/pr-179/01-original.png",
+    "media/pr-179/02-closed-gate.png",
+    "media/pr-179/03-open-gate.png",
     "media/pr-2/copy-group.png",
     "media/pr-2/final-hud.png",
     "media/pr-24/01-flat-bridge.png",
