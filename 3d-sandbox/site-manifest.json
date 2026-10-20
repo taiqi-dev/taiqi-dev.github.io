@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T08:32:35+00:00",
-  "stateObservedAt": "2026-10-20T08:32:35.340680+00:00",
-  "pullRequests": 222,
-  "images": 300,
+  "generatedAt": "2026-10-20T09:59:09+00:00",
+  "stateObservedAt": "2026-10-20T09:59:08.741125+00:00",
+  "pullRequests": 223,
+  "images": 302,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -197,6 +197,8 @@
     "media/pr-222/02-window-and-wall-decor.png",
     "media/pr-222/03-garden-fence.png",
     "media/pr-222/04-door-front.png",
+    "media/pr-223/01-resource-browser-doors.png",
+    "media/pr-223/02-resource-browser-tables.png",
     "media/pr-24/01-flat-bridge.png",
     "media/pr-24/02-arched-bridge.png",
     "media/pr-24/03-arch-detail-hud.png",
