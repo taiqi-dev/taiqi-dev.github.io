@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T23:07:10+00:00",
-  "stateObservedAt": "2026-10-20T23:07:50.565799+00:00",
-  "pullRequests": 229,
-  "images": 316,
+  "generatedAt": "2026-10-20T23:29:46+00:00",
+  "stateObservedAt": "2026-10-20T23:30:35.133419+00:00",
+  "pullRequests": 230,
+  "images": 318,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -213,6 +213,8 @@
     "media/pr-228/creator-tree.png",
     "media/pr-228/mature-carrot.png",
     "media/pr-228/wood-result.png",
+    "media/pr-229/TwoRugs.png",
+    "media/pr-229/WallFrames.png",
     "media/pr-24/01-flat-bridge.png",
     "media/pr-24/02-arched-bridge.png",
     "media/pr-24/03-arch-detail-hud.png",
