@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-21T07:50:18+00:00",
-  "stateObservedAt": "2026-10-21T07:50:18.533663+00:00",
-  "currentBatchUpdatedAt": "2026-10-21T07:41:30.616855+00:00",
-  "pullRequests": 246,
-  "images": 329,
+  "generatedAt": "2026-10-21T08:38:12+00:00",
+  "stateObservedAt": "2026-10-21T08:40:59.416056+00:00",
+  "currentBatchUpdatedAt": "2026-10-21T08:38:11.318789+00:00",
+  "pullRequests": 248,
+  "images": 330,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -230,6 +230,7 @@
     "media/pr-241/01-p0-actions-desktop.png",
     "media/pr-241/02-live-feedback-history.png",
     "media/pr-242/01-offline-panel.png",
+    "media/pr-245/01-inventory-panel.png",
     "media/pr-3/guest.png",
     "media/pr-3/host.png",
     "media/pr-3/resume.png",
