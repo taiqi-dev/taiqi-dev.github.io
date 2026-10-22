@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-10-22T07:54:03+00:00",
-  "stateObservedAt": "2026-10-22T01:36:01.868531-07:00",
+  "stateObservedAt": "2026-10-22T01:42:40.298236-07:00",
   "currentBatchUpdatedAt": "2026-10-22T01:30:31.055647-07:00",
   "pullRequests": 285,
-  "images": 332,
+  "images": 334,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -233,6 +233,8 @@
     "media/pr-243/03-repaired-meadow.png",
     "media/pr-245/01-inventory-panel.png",
     "media/pr-247/01-initial-natural-dressing.png",
+    "media/pr-270/20261022-stopped-3d.png",
+    "media/pr-273/20261022-stopped-3d.png",
     "media/pr-3/guest.png",
     "media/pr-3/host.png",
     "media/pr-3/resume.png",
