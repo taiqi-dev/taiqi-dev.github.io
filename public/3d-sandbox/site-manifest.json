@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T18:04:41+00:00",
-  "stateObservedAt": "2026-10-25T22:23:58.667371-07:00",
+  "generatedAt": "2026-10-26T18:24:56+00:00",
+  "stateObservedAt": "2026-10-26T11:24:52.427112-07:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 419,
   "images": 364,
@@ -372,6 +372,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-10-26T18:04:41+00:00",
-  "publishedAt": "2026-10-26T18:04:57+00:00"
+  "factsObservedAt": "2026-10-26T18:25:55+00:00",
+  "publishedAt": "2026-10-26T18:28:28+00:00"
 }
