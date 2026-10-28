@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T11:26:37+00:00",
-  "stateObservedAt": "2026-10-28T04:27:04.419517-07:00",
+  "generatedAt": "2026-10-28T13:29:51+00:00",
+  "stateObservedAt": "2026-10-28T06:28:26.767496-07:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 482,
   "images": 364,
@@ -373,5 +373,5 @@
     "media/pr-99/03-rotated-size-controls.png"
   ],
   "factsObservedAt": "2026-10-28T08:18:24+00:00",
-  "publishedAt": "2026-10-28T11:28:08+00:00"
+  "publishedAt": "2026-10-28T13:29:57+00:00"
 }
