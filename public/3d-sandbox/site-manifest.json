@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T13:29:51+00:00",
+  "generatedAt": "2026-10-28T19:38:25+00:00",
   "stateObservedAt": "2026-10-28T06:28:26.767496-07:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 482,
@@ -372,6 +372,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-10-28T08:18:24+00:00",
-  "publishedAt": "2026-10-28T13:29:57+00:00"
+  "factsObservedAt": "2026-10-28T19:36:08+00:00",
+  "publishedAt": "2026-10-28T19:38:30+00:00"
 }
