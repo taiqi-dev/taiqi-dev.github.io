@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T08:05:11+00:00",
+  "generatedAt": "2026-10-30T10:06:32+00:00",
   "stateObservedAt": "2026-10-30T00:02:48.520197+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 499,
-  "images": 364,
+  "images": 365,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -291,6 +291,7 @@
     "media/pr-49/01-saved-aero-65.png",
     "media/pr-49/02-share-import-preview.png",
     "media/pr-49/03-undo-restored-aero-25.png",
+    "media/pr-503/capture03-porch-complete.png",
     "media/pr-51/01-two-houses-skywalk.png",
     "media/pr-51/02-skywalk-terrace-seams.png",
     "media/pr-51/03-skywalk-production-hud.png",
@@ -372,6 +373,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-10-30T02:10:04+00:00",
-  "publishedAt": "2026-10-30T09:11:22+00:00"
+  "factsObservedAt": "2026-10-30T10:07:36+00:00",
+  "publishedAt": "2026-10-30T10:08:41+00:00"
 }
