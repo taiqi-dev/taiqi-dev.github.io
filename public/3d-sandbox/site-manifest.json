@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T04:54:36+00:00",
-  "stateObservedAt": "2026-11-01T04:54:02.416415+00:00",
+  "generatedAt": "2026-11-01T05:23:49+00:00",
+  "stateObservedAt": "2026-11-01T05:22:19.136540+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 503,
-  "images": 369,
+  "images": 376,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -244,6 +244,9 @@
     "media/pr-30/01-default-4s-clear.png",
     "media/pr-30/02-fast-0.5s-rain.png",
     "media/pr-30/03-next-20s-rain.png",
+    "media/pr-321/road-icons-states.png",
+    "media/pr-323/plaster-interior.png",
+    "media/pr-323/stone-timber.png",
     "media/pr-35/desktop.png",
     "media/pr-35/mobile.png",
     "media/pr-364/01-stopped.png",
@@ -296,6 +299,10 @@
     "media/pr-501/dialog10-actual.png",
     "media/pr-501/environment01-actual.png",
     "media/pr-503/capture03-porch-complete.png",
+    "media/pr-505/dark-two-front.png",
+    "media/pr-505/dark-two-original.png",
+    "media/pr-505/nc05-door-side.png",
+    "media/pr-505/nc05-opposite.png",
     "media/pr-51/01-two-houses-skywalk.png",
     "media/pr-51/02-skywalk-terrace-seams.png",
     "media/pr-51/03-skywalk-production-hud.png",
@@ -377,6 +384,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-10-31T06:21:11+00:00",
-  "publishedAt": "2026-11-01T04:55:02+00:00"
+  "factsObservedAt": "2026-11-01T05:23:32+00:00",
+  "publishedAt": "2026-11-01T05:24:48+00:00"
 }
