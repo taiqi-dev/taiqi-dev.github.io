@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T05:23:49+00:00",
-  "stateObservedAt": "2026-11-01T05:22:19.136540+00:00",
+  "generatedAt": "2026-11-01T05:59:20+00:00",
+  "stateObservedAt": "2026-11-01T05:59:35.388897+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 503,
-  "images": 376,
+  "pullRequests": 504,
+  "images": 381,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -303,6 +303,11 @@
     "media/pr-505/dark-two-original.png",
     "media/pr-505/nc05-door-side.png",
     "media/pr-505/nc05-opposite.png",
+    "media/pr-507/overview-1.png",
+    "media/pr-507/overview-2.png",
+    "media/pr-507/overview-3.png",
+    "media/pr-507/shade-far.png",
+    "media/pr-507/shade-near.png",
     "media/pr-51/01-two-houses-skywalk.png",
     "media/pr-51/02-skywalk-terrace-seams.png",
     "media/pr-51/03-skywalk-production-hud.png",
@@ -384,6 +389,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-01T05:23:32+00:00",
-  "publishedAt": "2026-11-01T05:24:48+00:00"
+  "factsObservedAt": "2026-11-01T05:59:11+00:00",
+  "publishedAt": "2026-11-01T06:00:40+00:00"
 }
