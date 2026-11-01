@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T10:00:39+00:00",
+  "generatedAt": "2026-11-01T10:50:35+00:00",
   "stateObservedAt": "2026-11-01T09:46:11.077717+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 505,
-  "images": 397,
+  "pullRequests": 506,
+  "images": 399,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -295,6 +295,7 @@
     "media/pr-49/02-share-import-preview.png",
     "media/pr-49/03-undo-restored-aero-25.png",
     "media/pr-497/alpine-later.png",
+    "media/pr-498/viking-overview.png",
     "media/pr-499/goblin-camp-later.png",
     "media/pr-500/gothic-later.png",
     "media/pr-501/building01-actual.png",
@@ -324,6 +325,7 @@
     "media/pr-508/goblin-mine-formal.png",
     "media/pr-509/alpine-overview.png",
     "media/pr-509/gothic-overview.png",
+    "media/pr-509/viking-overview.png",
     "media/pr-51/01-two-houses-skywalk.png",
     "media/pr-51/02-skywalk-terrace-seams.png",
     "media/pr-51/03-skywalk-production-hud.png",
@@ -405,6 +407,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-01T06:28:56+00:00",
-  "publishedAt": "2026-11-01T10:05:29+00:00"
+  "factsObservedAt": "2026-11-01T10:43:31+00:00",
+  "publishedAt": "2026-11-01T10:51:43+00:00"
 }
