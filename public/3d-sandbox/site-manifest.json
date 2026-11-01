@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T07:52:03+00:00",
+  "generatedAt": "2026-11-01T08:14:09+00:00",
   "stateObservedAt": "2026-11-01T07:40:31.009423+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 504,
-  "images": 385,
+  "images": 389,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -294,10 +294,14 @@
     "media/pr-49/01-saved-aero-65.png",
     "media/pr-49/02-share-import-preview.png",
     "media/pr-49/03-undo-restored-aero-25.png",
+    "media/pr-499/goblin-camp-later.png",
     "media/pr-501/building01-actual.png",
     "media/pr-501/dialog01-readability-failed.png",
     "media/pr-501/dialog10-actual.png",
     "media/pr-501/environment01-actual.png",
+    "media/pr-502/ui-building-dropdown.png",
+    "media/pr-502/ui-dialog-closed.png",
+    "media/pr-502/ui-environment-dropdown.png",
     "media/pr-503/capture03-porch-complete.png",
     "media/pr-505/dark-two-front.png",
     "media/pr-505/dark-two-original.png",
@@ -394,5 +398,5 @@
     "media/pr-99/03-rotated-size-controls.png"
   ],
   "factsObservedAt": "2026-11-01T06:28:56+00:00",
-  "publishedAt": "2026-11-01T07:52:21+00:00"
+  "publishedAt": "2026-11-01T08:14:37+00:00"
 }
