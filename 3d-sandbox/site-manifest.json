@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T05:59:20+00:00",
-  "stateObservedAt": "2026-11-01T05:59:35.388897+00:00",
+  "generatedAt": "2026-11-01T06:29:13+00:00",
+  "stateObservedAt": "2026-11-01T06:28:48.801079+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 504,
-  "images": 381,
+  "images": 385,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -308,6 +308,10 @@
     "media/pr-507/overview-3.png",
     "media/pr-507/shade-far.png",
     "media/pr-507/shade-near.png",
+    "media/pr-508/goblin-camp-formal.png",
+    "media/pr-508/goblin-catalog-headquarters.png",
+    "media/pr-508/goblin-catalog-tents.png",
+    "media/pr-508/goblin-mine-formal.png",
     "media/pr-51/01-two-houses-skywalk.png",
     "media/pr-51/02-skywalk-terrace-seams.png",
     "media/pr-51/03-skywalk-production-hud.png",
@@ -389,6 +393,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-01T05:59:11+00:00",
-  "publishedAt": "2026-11-01T06:00:40+00:00"
+  "factsObservedAt": "2026-11-01T06:28:56+00:00",
+  "publishedAt": "2026-11-01T06:29:34+00:00"
 }
