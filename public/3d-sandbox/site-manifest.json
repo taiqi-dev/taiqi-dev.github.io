@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T08:36:11+00:00",
+  "generatedAt": "2026-11-20T10:16:49+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 632,
-  "images": 465,
+  "pullRequests": 635,
+  "images": 477,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -415,6 +415,18 @@
     "media/pr-636/alpine-default-sky.png",
     "media/pr-636/frost-comparison.jpg",
     "media/pr-636/frost-default-sky.png",
+    "media/pr-637/01-overview.png",
+    "media/pr-637/02-arrival.png",
+    "media/pr-637/03-detail.png",
+    "media/pr-637/04-default-sky.png",
+    "media/pr-638/01-overview.png",
+    "media/pr-638/02-arrival.png",
+    "media/pr-638/03-waterfront.png",
+    "media/pr-638/04-default-sky.png",
+    "media/pr-639/01-overview.png",
+    "media/pr-639/02-arrival.png",
+    "media/pr-639/03-detail.png",
+    "media/pr-639/04-default-sky.png",
     "media/pr-65/04-repaired-contact.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
@@ -473,6 +485,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-20T08:40:02+00:00",
-  "publishedAt": "2026-11-20T08:41:06+00:00"
+  "factsObservedAt": "2026-11-20T10:17:01+00:00",
+  "publishedAt": "2026-11-20T10:17:52+00:00"
 }
