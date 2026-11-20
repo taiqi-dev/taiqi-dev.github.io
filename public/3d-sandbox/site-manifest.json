@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T12:38:21+00:00",
+  "generatedAt": "2026-11-20T13:10:02+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 641,
-  "images": 491,
+  "pullRequests": 643,
+  "images": 495,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -441,6 +441,10 @@
     "media/pr-644/parlor-02-before-approach.png",
     "media/pr-645/after-bridge.png",
     "media/pr-645/after-doorstep.png",
+    "media/pr-646/after-approach.png",
+    "media/pr-646/after-turn.png",
+    "media/pr-647/01-after-west-turn.png",
+    "media/pr-647/02-after-inside-door.png",
     "media/pr-65/04-repaired-contact.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
@@ -499,6 +503,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-20T12:38:21+00:00",
-  "publishedAt": "2026-11-20T12:38:54+00:00"
+  "factsObservedAt": "2026-11-20T13:11:12+00:00",
+  "publishedAt": "2026-11-20T13:12:17+00:00"
 }
