@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T22:28:19+00:00",
+  "generatedAt": "2026-11-20T22:55:03+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 645,
-  "images": 501,
+  "pullRequests": 646,
+  "images": 504,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -452,6 +452,9 @@
     "media/pr-649/04-pond-after.png",
     "media/pr-649/05-parlor-third-person.png",
     "media/pr-65/04-repaired-contact.png",
+    "media/pr-650/01-court-before.png",
+    "media/pr-650/02-court-after.png",
+    "media/pr-650/05-player-poolside.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
@@ -509,6 +512,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-20T22:30:38+00:00",
-  "publishedAt": "2026-11-20T22:31:20+00:00"
+  "factsObservedAt": "2026-11-20T22:59:56+00:00",
+  "publishedAt": "2026-11-20T23:00:42+00:00"
 }
