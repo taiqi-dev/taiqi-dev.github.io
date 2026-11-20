@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T02:07:53+00:00",
+  "generatedAt": "2026-11-20T08:36:11+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 626,
-  "images": 456,
+  "pullRequests": 632,
+  "images": 465,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -406,6 +406,15 @@
     "media/pr-63/01-whole-tower-flag.png",
     "media/pr-63/02-conformed-mounts.png",
     "media/pr-63/03-reshaped-same-flag.png",
+    "media/pr-631/01-alpine-comparison.jpg",
+    "media/pr-631/02-manor-comparison.jpg",
+    "media/pr-635/goblin-comparison.jpg",
+    "media/pr-635/gothic-comparison.jpg",
+    "media/pr-635/viking-comparison.jpg",
+    "media/pr-636/alpine-comparison.jpg",
+    "media/pr-636/alpine-default-sky.png",
+    "media/pr-636/frost-comparison.jpg",
+    "media/pr-636/frost-default-sky.png",
     "media/pr-65/04-repaired-contact.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
@@ -464,6 +473,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-20T02:07:37+00:00",
-  "publishedAt": "2026-11-20T02:08:51+00:00"
+  "factsObservedAt": "2026-11-20T08:40:02+00:00",
+  "publishedAt": "2026-11-20T08:41:06+00:00"
 }
