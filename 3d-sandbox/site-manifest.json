@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T01:08:27+00:00",
+  "generatedAt": "2026-11-21T02:46:47+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 650,
-  "images": 519,
+  "pullRequests": 651,
+  "images": 524,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -470,6 +470,11 @@
     "media/pr-653/03-barracks-balcony.png",
     "media/pr-653/04-forge-brazier.png",
     "media/pr-653/05-service-gate-open.png",
+    "media/pr-655/bridge-section-after.png",
+    "media/pr-655/bridge-section-before.png",
+    "media/pr-655/east-lookback-after.png",
+    "media/pr-655/east-lookback-before.png",
+    "media/pr-655/east-offset-reopened.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
@@ -527,6 +532,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-21T01:09:18+00:00",
-  "publishedAt": "2026-11-21T01:09:57+00:00"
+  "factsObservedAt": "2026-11-21T02:47:26+00:00",
+  "publishedAt": "2026-11-21T02:49:16+00:00"
 }
