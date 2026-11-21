@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T03:36:49+00:00",
+  "generatedAt": "2026-11-21T05:12:24+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 653,
-  "images": 534,
+  "pullRequests": 656,
+  "images": 547,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -485,6 +485,19 @@
     "media/pr-657/03-live-lookback.png",
     "media/pr-657/04-parlor-threshold.png",
     "media/pr-657/05-live-north-return.png",
+    "media/pr-658/01-legacy-rehang-choice.png",
+    "media/pr-658/02-rehung-closed.png",
+    "media/pr-658/03-reopened-crossing.png",
+    "media/pr-659/01-before-approach.png",
+    "media/pr-659/02-after-approach.png",
+    "media/pr-659/03-before-east-seam.png",
+    "media/pr-659/04-after-east-seam.png",
+    "media/pr-659/05-player-enter.png",
+    "media/pr-660/01-entry-before.png",
+    "media/pr-660/02-entry-after.png",
+    "media/pr-660/03-live-closed.png",
+    "media/pr-660/04-live-open.png",
+    "media/pr-660/05-reopened-north.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
@@ -542,6 +555,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-21T03:37:33+00:00",
-  "publishedAt": "2026-11-21T03:38:42+00:00"
+  "factsObservedAt": "2026-11-21T05:13:17+00:00",
+  "publishedAt": "2026-11-21T05:13:47+00:00"
 }
