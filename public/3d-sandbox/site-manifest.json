@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T10:14:23+00:00",
+  "generatedAt": "2026-11-21T10:51:40+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
   "pullRequests": 663,
-  "images": 547,
+  "images": 552,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -498,6 +498,11 @@
     "media/pr-660/03-live-closed.png",
     "media/pr-660/04-live-open.png",
     "media/pr-660/05-reopened-north.png",
+    "media/pr-667/01-workshop-load.png",
+    "media/pr-667/02-workshop-confirm.png",
+    "media/pr-667/03-workshop-progress.png",
+    "media/pr-667/04-camera-film-toast.png",
+    "media/pr-667/05-narrow-camera.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
@@ -556,5 +561,5 @@
     "media/pr-99/03-rotated-size-controls.png"
   ],
   "factsObservedAt": "2026-11-21T10:14:09+00:00",
-  "publishedAt": "2026-11-21T10:15:26+00:00"
+  "publishedAt": "2026-11-21T10:53:14+00:00"
 }
