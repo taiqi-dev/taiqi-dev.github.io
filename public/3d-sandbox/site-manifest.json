@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T10:56:33+00:00",
+  "generatedAt": "2026-11-21T17:33:33+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 663,
-  "images": 552,
+  "pullRequests": 671,
+  "images": 562,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -506,6 +506,16 @@
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
+    "media/pr-670/00-original.png",
+    "media/pr-670/01-pencil.png",
+    "media/pr-670/02-halftone.png",
+    "media/pr-670/03-pixel.png",
+    "media/pr-670/04-crt.png",
+    "media/pr-671/01-pause-load-desktop.png",
+    "media/pr-671/02-pause-save-desktop.png",
+    "media/pr-671/03-pause-settings-desktop.png",
+    "media/pr-671/04-resource-catalog-desktop.png",
+    "media/pr-671/05-pause-load-narrow.png",
     "media/pr-70/01-baseline.png",
     "media/pr-70/02-ripple.png",
     "media/pr-70/03-dissipated.png",
@@ -560,6 +570,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-21T10:56:25+00:00",
-  "publishedAt": "2026-11-21T10:58:49+00:00"
+  "factsObservedAt": "2026-11-21T17:25:52+00:00",
+  "publishedAt": "2026-11-21T17:34:39+00:00"
 }
