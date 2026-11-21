@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T00:31:42+00:00",
+  "generatedAt": "2026-11-21T00:38:23+00:00",
   "stateObservedAt": "2026-11-02T05:58:12.626820+00:00",
   "currentBatchUpdatedAt": "2026-10-23T22:44:37.062809-07:00",
-  "pullRequests": 647,
-  "images": 509,
+  "pullRequests": 649,
+  "images": 519,
   "source": "3DSandboxTest Workbench",
   "url": "https://taiqi-dev.github.io/3d-sandbox/",
   "imagePaths": [
@@ -460,6 +460,16 @@
     "media/pr-651/03-boardwalk-before.png",
     "media/pr-651/04-boardwalk-after.png",
     "media/pr-651/05-longhouse-player.png",
+    "media/pr-652/20-night-annex-live.png",
+    "media/pr-652/20-night-return-live.png",
+    "media/pr-652/31-night-ordinary.png",
+    "media/pr-652/32-night-blood-moon.png",
+    "media/pr-652/after-02-stair.png",
+    "media/pr-653/01-bay-before.png",
+    "media/pr-653/02-bay-grey-green.png",
+    "media/pr-653/03-barracks-balcony.png",
+    "media/pr-653/04-forge-brazier.png",
+    "media/pr-653/05-service-gate-open.png",
     "media/pr-67/01-whole-cottage-buttress.png",
     "media/pr-67/02-stone-wedge-ground-contact.png",
     "media/pr-67/03-reshaped-house-exterior-controls.png",
@@ -517,6 +527,6 @@
     "media/pr-99/02-expanded-3x2.png",
     "media/pr-99/03-rotated-size-controls.png"
   ],
-  "factsObservedAt": "2026-11-21T00:33:23+00:00",
-  "publishedAt": "2026-11-21T00:34:11+00:00"
+  "factsObservedAt": "2026-11-21T00:40:00+00:00",
+  "publishedAt": "2026-11-21T00:41:43+00:00"
 }
